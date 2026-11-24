@@ -155,7 +155,7 @@ footer{text-align:center;padding:24px 20px 120px;color:var(--mut);font-size:.82r
   aspect-ratio: 4 / 5 !important;
 }
 
-  /* Only Hyderabad Felicitation Gallery */
+/* Only Hyderabad Felicitation Gallery */
 .hyderabad-event .strip figure {
   flex: 0 0 260px;
   height: 200px;
@@ -172,12 +172,13 @@ footer{text-align:center;padding:24px 20px 120px;color:var(--mut);font-size:.82r
   display: block;
 }
 
-/* Mobile responsive */
+/* Mobile: preserve the same elongated proportions */
 @media (max-width: 600px) {
   .hyderabad-event .strip figure {
-    flex: 0 0 240px;
-    height: 185px;
+    flex: 0 0 72vw;
+    height: calc(72vw * 0.77);
   }
+}
 }
 </style>
 </head>
