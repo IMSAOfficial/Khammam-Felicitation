@@ -155,11 +155,28 @@ footer{text-align:center;padding:24px 20px 120px;color:var(--mut);font-size:.82r
   aspect-ratio: 4 / 5 !important;
 }
 
-/* Mobile responsiveness */
+  /* Only Hyderabad Felicitation Gallery */
+.hyderabad-event .strip figure {
+  flex: 0 0 260px;
+  height: 200px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  scroll-snap-align: start;
+}
+
+.hyderabad-event .strip figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobile responsive */
 @media (max-width: 600px) {
-  .hyderabad-gallery figure {
-    flex-basis: 86%;
-    aspect-ratio: 4 / 3 !important;
+  .hyderabad-event .strip figure {
+    flex: 0 0 240px;
+    height: 185px;
   }
 }
 </style>
@@ -211,7 +228,7 @@ footer{text-align:center;padding:24px 20px 120px;color:var(--mut);font-size:.82r
 
 
 <!-- HYDERABAD FELICITATION EVENT 2026 -->
-<div class="node rv">
+<div class="node rv hyderabad-event">  
   <h3>Hyderabad Felicitation Event 2026</h3>
   <p class="hl">
     Glimpses from the Felicitation cum Orientation Event · IMSA × DARE · 1st November 2026.
